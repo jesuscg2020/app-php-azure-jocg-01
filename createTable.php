@@ -1,9 +1,9 @@
 <?php
 $port = 1433;
-$serverName = "tcp:YOUR_SQL_AZURE_URL," . $port;
-$database = "mySQLDataBase";
-$userName = "student-azure";
-$password = "myServerSQL#";
+$serverName = "myserver-jocg-01.database.windows.net," . $port;
+$database = "AdventureWorks";
+$userName = "Student";
+$password = "Pa55w.rd";
 
 try {
     $conn = new PDO("sqlsrv:server = $serverName,$port; Database = $database", $userName, $password);
